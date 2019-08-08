@@ -5,7 +5,7 @@ from django.shortcuts import render
 from .models import Book, Author, BookInstance, Genre
 
 
-# def index(request):
+def index(request):
     # """View function for home page of site."""
     # # Generate counts of some of the main objects
     # num_books = Book.objects.all().count()
@@ -26,6 +26,7 @@ from .models import Book, Author, BookInstance, Genre
     #              'num_instances_available': num_instances_available, 'num_authors': num_authors,
     #              'num_visits': num_visits},
     # )
+    return render(request,'index.html')
 
 
 from django.views import generic
