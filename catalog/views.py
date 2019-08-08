@@ -8,7 +8,7 @@ def index(request):
     """View function for home page of site."""
 
     # Generate counts of some of the main objects
-    num_books = Book.objects.all().count()  # fetches the number of records
+    # num_books = Book.objects.all().count()  # fetches the number of records
     num_instances = BookInstance.objects.all().count()
 
     # Available books (status = 'a')
